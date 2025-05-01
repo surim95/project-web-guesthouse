@@ -3,8 +3,17 @@
 #wrap header {
     background-color: aqua;
 }
-#wrap header .right_wrap {}
-#wrap header .right_wrap a {}
+#wrap header .right_wrap {
+    text-align: right;
+    padding: 8px 80px;
+}
+#wrap header .right_wrap a {
+    margin-right: 16px;
+}
+#wrap header .right_wrap a:first-child::after {
+    width: 1px; height: 10px;
+    background-color: #000;
+}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
