@@ -13,11 +13,7 @@
 #wrap header nav .gnb li {}
 #wrap header nav .gnb li a {}
 #wrap header nav .gnb li a p {}
-/* main================================================================ */
-#wrap main .br {
-    width: 500px;
-    background-color: azure;
-}
+
 /* footer============================================================== */
 #wrap footer {
     background-color: aqua;
