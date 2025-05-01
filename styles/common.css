@@ -1,0 +1,32 @@
+#wrap {}
+/* header============================================================== */
+#wrap header {
+    background-color: aqua;
+}
+#wrap header .right_wrap {}
+#wrap header .right_wrap a {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav .gnb {}
+#wrap header nav .gnb li {}
+#wrap header nav .gnb li a {}
+#wrap header nav .gnb li a p {}
+/* main================================================================ */
+#wrap main .br {
+    width: 500px;
+    background-color: azure;
+}
+/* footer============================================================== */
+#wrap footer {
+    background-color: aqua;
+}
+#wrap footer .top_wrap {}
+#wrap footer .top_wrap .fnb {}
+#wrap footer .top_wrap .fnb li {}
+#wrap footer .top_wrap .fnb li a {}
+#wrap footer .bottom_wrap {}
+#wrap footer .bottom_wrap p {}
+#wrap footer .bottom_wrap p em {}
+#wrap footer .bottom_wrap p img {}
