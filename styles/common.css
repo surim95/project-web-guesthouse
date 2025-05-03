@@ -18,7 +18,7 @@
     margin-right: 0;
 }
 #wrap header .right_wrap li a {}
-#wrap header .right_wrap li::after { /* 고칠부분 ul로 고치기 */
+#wrap header .right_wrap li::after {
     width: 1px; height: 10px;
     background-color: #000;
     content: ""; display: inline-block;
@@ -59,34 +59,38 @@
 #wrap header nav .gnb li:hover a p {
     color: #00712D;
 }
-/* footer============================================================== */
+/* footer ============================================================== */
 #wrap footer {
     background-color: #FFFBE6;
     text-align: center;
     padding: 80px 0;
 }
-#wrap footer .top_wrap {
+#wrap footer #footer_wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+#wrap footer #footer_wrap .top_wrap {
     margin-bottom: 40px;
 }
-#wrap footer .top_wrap .fnb {
+#wrap footer #footer_wrap .top_wrap .fnb {
     display: flex; flex-flow: row nowrap;
     justify-content: center;
 }
-#wrap footer .top_wrap .fnb li {
+#wrap footer #footer_wrap .top_wrap .fnb li {
     margin-right: 24px;
 }
-#wrap footer .top_wrap .fnb li::after {
+#wrap footer #footer_wrap .top_wrap .fnb li::after {
     display: inline-block;
     width: 1px; height: 10px;
     content: "";
     background-color: #000;
     margin-left: 24px;
 }
-#wrap footer .top_wrap .fnb li:last-child::after {
+#wrap footer #footer_wrap .top_wrap .fnb li:last-child::after {
     display: none;
 }
-#wrap footer .top_wrap .fnb li a {}
-#wrap footer .bottom_wrap {
+#wrap footer #footer_wrap .top_wrap .fnb li a {}
+#wrap footer #footer_wrap .bottom_wrap {
     width: 1280px;
     display: flex; flex-flow: row nowrap;
     justify-content:space-between;
@@ -95,12 +99,12 @@
     position: relative;
     margin: 0 auto;
 }
-#wrap footer .bottom_wrap p {
+#wrap footer #footer_wrap .bottom_wrap p {
     font-size: 0.75rem;
     line-height: 1.8;
 }
-#wrap footer .bottom_wrap p em {
+#wrap footer #footer_wrap .bottom_wrap p em {
     font-size: 0.875rem;
     font-weight: 500;
 }
-#wrap footer .bottom_wrap p img {}
+#wrap footer #footer_wrap .bottom_wrap p img {}
