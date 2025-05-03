@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>로그인(Login) | 호랑가시나무언덕 게스트하우스</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/common.css" rel="stylesheet">
+    <link href="./styles/login.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1><a href="./index.html"><img src="./images/logo2.png" alt="호랑가시나무언덕 게스트하우스 메인 바로가기"></a></h1>
+        <section id="login_wrap">
+            <form action="#" method="post" id="login_frm">
+                <div class="login_sign_in">
+                    <input type="text" name="user_id" placeholder="아이디를 입력해 주세요.">
+                    <div class="pw_default">
+                        <input type="password" name="user_pw" id="pw_see" placeholder="비밀번호를 입력해 주세요.">
+                        <img src="./images/icon_eyeclose.png" alt="비밀번호 가리기" id="pw_see_img">
+                    </div>
+                    <div class="stay_login">
+                        <input type="checkbox" value="stay_id" name="user_stay" id="stay_id_on">
+                        <label for="stay_id_on">아이디 저장</label>
+                        <input type="checkbox" value="stay_login" name="user_stay" id="stay_login_on">
+                        <label for="stay_login_on">로그인 상태 유지</label>
+                    </div>
+                    <button type="submit" id="sign_in_btn">로그인</button>
+                    <ul class="find_user">
+                        <li><a href="#">아이디 찾기</a></li>
+                        <li><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+                <div class="login_sns">
+                    <a href="#"><img src="./images/logo_naver.png" alt="네이버로 로그인하기"></a>
+                    <a href="#"><img src="./images/logo_kakao.png" alt="카카오로 로그인하기"></a>
+                    <a href="#"><img src="./images/logo_google.png" alt="구글로 로그인하기"></a>
+                </div>
+                <div class="login_other_option">
+                    <button type="button" id="sign_up_btn">회원가입</button>
+                    <button type="button" id="reserv_btn">비회원 예약 <span>예약 조회</span></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script>
+    const passwordInput = document.getElementById('pw_see'); /* id가 pw_see인 password를 passwordInput 에 담기. */
+    const toggleIcon = document.getElementById('pw_see_img'); /* id가 pw_see_img인 아이콘을 toggleIcon 에 담기. */
+    toggleIcon.addEventListener('click', function() { /* toggleIcon을 클릭하면 이벤트가 발생. */
+        /* toggleIcon을 클릭하면 passwordInput의 타입이 password일 경우 text로 바꾸고 아닐 경우 password로 바꾼다. */
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type); /* 위에서 적용된 type 값을 type 속성에 담는다. */
+        /* this = 클릭된 이미지 요소의 type이 password 이면 icon_eyeclose를 보여주고 아니면 icon_eyeopen을 보여준다. */
+        this.src = type === 'password' ? "./images/icon_eyeclose.png" : "./images/icon_eyeopen.png" ; });
+</script>
+</html>

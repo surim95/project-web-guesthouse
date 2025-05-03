@@ -10,16 +10,21 @@
     text-align: right;
     padding: 8px 80px;
 }
-#wrap header .right_wrap a {
+#wrap header .right_wrap li {
     margin-right: 16px;
+    display: inline-block;
 }
-#wrap header .right_wrap a::after {
+#wrap header .right_wrap li:last-child {
+    margin-right: 0;
+}
+#wrap header .right_wrap li a {}
+#wrap header .right_wrap li::after { /* 고칠부분 ul로 고치기 */
     width: 1px; height: 10px;
     background-color: #000;
     content: ""; display: inline-block;
     margin-left: 16px;
 }
-#wrap header .right_wrap a:last-child::after {
+#wrap header .right_wrap li:last-child:after {
     display: none;
 }
 #wrap header h1 {
