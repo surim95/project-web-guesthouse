@@ -24,7 +24,7 @@
     content: ""; display: inline-block;
     margin-left: 16px;
 }
-#wrap header .right_wrap li:last-child:after {
+#wrap header .right_wrap li:last-child::after {
     display: none;
 }
 #wrap header h1 {
