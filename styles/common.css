@@ -33,30 +33,33 @@
 }
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {
+/* gnb 영역 (스크롤) */
+#wrap nav {
+    position: sticky; top: 0;
+}
+#wrap nav .gnb {
     width: 100%; height: 74px;
     display: flex; flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #fff;
 }
-#wrap header nav .gnb li {
+#wrap nav .gnb li {
     margin-right: 80px;
-    
 }
-#wrap header nav .gnb li:last-child {
+#wrap nav .gnb li:last-child {
     margin-right: 0;
 }
-#wrap header nav .gnb li a {
+#wrap nav .gnb li a {
     font-size: 0.75rem;
     color: #D1D1D1;
 }
-#wrap header nav .gnb li a p {
+#wrap nav .gnb li a p {
     font-size: 1.125rem;
     font-weight: 600;
 }
-#wrap header nav .gnb li:hover a p {
+#wrap nav .gnb li:hover a p {
     color: #00712D;
 }
 /* footer ============================================================== */
