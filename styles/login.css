@@ -8,10 +8,10 @@ main {
     max-width: 440px;
     min-width: 320px;
     padding: 106px 20px;
+    margin: 0 auto;
 }
 main #login_wrap {
     text-align: center;
-    border: 1px solid #000;
 }
 main #login_wrap h1 {
     margin-bottom: 60px;
