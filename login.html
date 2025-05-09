@@ -12,38 +12,40 @@
 </head>
 <body>
     <main>
-        <h1><a href="./index.html"><img src="./images/logo2.png" alt="호랑가시나무언덕 게스트하우스 메인 바로가기"></a></h1>
-        <section id="login_wrap">
-            <form action="#" method="post" id="login_frm">
-                <div class="login_sign_in">
-                    <input type="text" name="user_id" placeholder="아이디를 입력해 주세요.">
-                    <div class="pw_default">
-                        <input type="password" name="user_pw" id="pw_see" placeholder="비밀번호를 입력해 주세요.">
-                        <img src="./images/icon_eyeclose.png" alt="비밀번호 가리기" id="pw_see_img">
+        <div id="login_wrap">
+            <h1><a href="./index.html"><img src="./images/logo2.png" alt="호랑가시나무언덕 게스트하우스 메인 바로가기"></a></h1>
+            <section id="login_wrap">
+                <form action="#" method="post" id="login_frm">
+                    <div class="login_sign_in">
+                        <input type="text" name="user_id" placeholder="아이디를 입력해 주세요.">
+                        <div class="pw_default">
+                            <input type="password" name="user_pw" id="pw_see" placeholder="비밀번호를 입력해 주세요.">
+                            <img src="./images/icon_eyeclose.png" alt="비밀번호 가리기" id="pw_see_img">
+                        </div>
+                        <div class="stay_login">
+                            <input type="checkbox" value="stay_id" name="user_stay" id="stay_id_on">
+                            <label for="stay_id_on">아이디 저장</label>
+                            <input type="checkbox" value="stay_login" name="user_stay" id="stay_login_on">
+                            <label for="stay_login_on">로그인 상태 유지</label>
+                        </div>
+                        <button type="submit" id="sign_in_btn">로그인</button>
+                        <ul class="find_user">
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul>
                     </div>
-                    <div class="stay_login">
-                        <input type="checkbox" value="stay_id" name="user_stay" id="stay_id_on">
-                        <label for="stay_id_on">아이디 저장</label>
-                        <input type="checkbox" value="stay_login" name="user_stay" id="stay_login_on">
-                        <label for="stay_login_on">로그인 상태 유지</label>
+                    <div class="login_sns">
+                        <a href="#"><img src="./images/logo_naver.png" alt="네이버로 로그인하기"></a>
+                        <a href="#"><img src="./images/logo_kakao.png" alt="카카오로 로그인하기"></a>
+                        <a href="#"><img src="./images/logo_google.png" alt="구글로 로그인하기"></a>
                     </div>
-                    <button type="submit" id="sign_in_btn">로그인</button>
-                    <ul class="find_user">
-                        <li><a href="#">아이디 찾기</a></li>
-                        <li><a href="#">비밀번호 찾기</a></li>
-                    </ul>
-                </div>
-                <div class="login_sns">
-                    <a href="#"><img src="./images/logo_naver.png" alt="네이버로 로그인하기"></a>
-                    <a href="#"><img src="./images/logo_kakao.png" alt="카카오로 로그인하기"></a>
-                    <a href="#"><img src="./images/logo_google.png" alt="구글로 로그인하기"></a>
-                </div>
-                <div class="login_other_option">
-                    <button type="button" id="sign_up_btn">회원가입</button>
-                    <button type="button" id="reserv_btn">비회원 예약 <span>예약 조회</span></button>
-                </div>
-            </form>
-        </section>
+                    <div class="login_other_option">
+                        <button type="button" id="sign_up_btn">회원가입</button>
+                        <button type="button" id="reserv_btn">비회원 예약 <span>예약 조회</span></button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
 </body>
 <script>
