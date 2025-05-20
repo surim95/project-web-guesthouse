@@ -43,7 +43,6 @@
     margin: 0 auto;
     width: 1280px;
     text-align: center;
-    overflow: hidden;
     position: relative; z-index: 10;
 }
 #wrap main .contents_wrap >h2{
@@ -61,6 +60,9 @@
     position: relative;
     padding: 80px 0;
 }
+#wrap main .hill .contents_wrap {
+    overflow: hidden;
+}
 #wrap main .hill .contents_wrap .hill_pic_slide {
     width: max-content;
     display: flex; flex-flow: row nowrap;    
@@ -72,19 +74,6 @@
     margin-right: 0;
 }
 #wrap main .hill .contents_wrap .hill_pic_slide a img {}
-#wrap main .hill .slide_btn {}
-#wrap main .hill .slide_btn #slide_left_btn{
-    position: absolute; z-index: 20;
-    left: 230px; top: 50%;
-    transform: translateY(-50%)
-}
-#wrap main .hill .slide_btn #slide_left_btn img{}
-#wrap main .hill .slide_btn #slide_right_btn{
-    position: absolute; z-index: 20;
-    right: 230px; top: 50%;
-    transform: translateY(-50%)
-}
-#wrap main .hill .slide_btn #slide_right_btn img{}
 /* 3행 studio ========================= */
 #wrap main .studio {
     padding: 80px 0;
