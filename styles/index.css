@@ -37,92 +37,132 @@
 #wrap main .bg_wrap .bg_nav_wrap a:last-child {
     margin-right: 0;
 }
-/* 2행 hill ============================================ */
-/* 2,3행 공통 스타일 ==================*/
-#wrap main .contents_wrap {
+/* 2행 3행 공통 CSS */
+#wrap main .title {
     margin: 0 auto;
-    width: 1280px;
     text-align: center;
-    position: relative; z-index: 10;
 }
-#wrap main .contents_wrap >h2{
+#wrap main .title >h2 {
     color: #00712D;
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 24px;
 }
-#wrap main .contents_wrap >p{
+#wrap main .title >p {
     line-height: 1.5;
     margin-bottom: 80px;
 }
-/* 2행 개별 스타일 =================== */
-#wrap main .hill{
-    position: relative;
+/* 2행 hill */
+#wrap main .hill {
+    border: 1px solid red;
     padding: 80px 0;
 }
 #wrap main .hill .contents_wrap {
+    border: 1px solid orange;
+    margin: 0 230px;
+    position: relative;
+}
+#wrap main .hill .contents_wrap .slide_btn {}
+#wrap main .hill .contents_wrap .slide_btn #left_slide_btn {
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+#wrap main .hill .contents_wrap .slide_btn #left_slide_btn img{}
+#wrap main .hill .contents_wrap .slide_btn #right_slide_btn {
+    position: absolute; right:0; top: 50%;
+    transform: translateY(-50%);
+}
+#wrap main .hill .contents_wrap .slide_btn #right_slide_btn img{}
+#wrap main .hill .contents_wrap .slide_wrap{
+    width: 1280px;
+    display: flex; flex-flow: row nowrap;
+    gap: 20px;
     overflow: hidden;
+    margin: 0 auto;
 }
-#wrap main .hill .contents_wrap .hill_pic_slide {
-    width: max-content;
-    display: flex; flex-flow: row nowrap;    
-}
-#wrap main .hill .contents_wrap .hill_pic_slide a {
-    margin-right: 20px;
-}
-#wrap main .hill .contents_wrap .hill_pic_slide a:last-child {
-    margin-right: 0;
-}
-#wrap main .hill .contents_wrap .hill_pic_slide a img {}
-/* 3행 studio ========================= */
+#wrap main .hill .contents_wrap .slide_wrap a{}
+#wrap main .hill .contents_wrap .slide_wrap a img{}
+/* 3행 studio */
 #wrap main .studio {
     padding: 80px 0;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap {
-    padding: 0 80px;
+#wrap main .studio .contents_wrap{
+    text-align: center;
+    margin: 0 auto;
+    width: 1280px;
     display: flex; flex-flow: row nowrap;
     gap: 50px;
-    border: 1px solid red;
+    padding: 0 80px;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li {
+#wrap main .studio .contents_wrap li {
     border: 1px solid #B1B1B1;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li >p {}
-#wrap main .studio .contents_wrap .studio_pic_wrap li >p img{}
-#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents {
+#wrap main .studio .contents_wrap li >p {
+    width: 340px; height: 340px;
+}
+#wrap main .studio .contents_wrap li >p img {}
+#wrap main .studio .contents_wrap li .explain {
     width: 340px; height: 152px;
+    background-color: #fff;
     padding: 35px 0;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents h2 {
-    margin-bottom: 20px;
+#wrap main .studio .contents_wrap li .explain h2 {
     font-size: 1.25rem;
     font-weight: 500;
+    margin-bottom: 20px;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents p:nth-child(2) {
+#wrap main .studio .contents_wrap li .explain p:nth-child(2) {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 1.5;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents p:nth-child(3) {
+#wrap main .studio .contents_wrap li .explain p:nth-child(3) {
     display: none;
+    margin-top: 6px;
 }
-/* li:hover */
-#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover {
+/* 3행 hover 이벤트 */
+#wrap main .studio .contents_wrap li:hover * {
+    transition: all 0.3s;
+}
+#wrap main .studio .contents_wrap li:hover {
     border: 1px solid #00712D;
     position: relative;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover >p {
-    position: relative; z-index: 40;
-}
-#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents {
+#wrap main .studio .contents_wrap li:hover .explain {
     height: 184px;
+    position: absolute; bottom: 0;
     padding: 41px 0;
-    position: absolute; bottom: 0; z-index: 50;
+    box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.2);
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents h2{
+#wrap main .studio .contents_wrap li:hover .explain h2 {
     color: #00712D;
 }
-#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents p:nth-child(3) {
-    margin-top: 6px;
+#wrap main .studio .contents_wrap li:hover .explain p:nth-child(3) {
     display: block;
+}
+/* 4행 주변관광지 */
+#wrap main .around {
+    width: 100%;
+    background-color: #D5ED9F;
+    padding: 80px 0;
+}
+#wrap main .around .around_title {
+    margin: 0 auto;
+    width: 1280px;
+    border: 1px solid red;
+    position: relative;
+}
+#wrap main .around .around_title h1 {
+    color: #00712D;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+#wrap main .around .around_title p {
+    font-size: 0.875rem;
+    position: absolute; right: 0; bottom: 0;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+#wrap main .around .around_title p img {
+    padding-left: 2px;
 }
