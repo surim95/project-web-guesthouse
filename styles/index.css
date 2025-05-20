@@ -1,1 +1,139 @@
 /* index.html */
+#wrap main {}
+/* 1행 대표이미지======================================== */
+#wrap main .bg_wrap {
+    height: 800px;
+    position: relative;
+    margin-bottom: 80px;
+}
+#wrap main .bg_wrap .bg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#wrap main .bg_wrap .bg1{
+    display: block;
+    background-image: url(../images/mainphoto.jpg);
+}
+#wrap main .bg_wrap .bg2{display: none;}
+#wrap main .bg_wrap .bg3{display: none;}
+#wrap main .bg_wrap .bg4{display: none;}
+#wrap main .bg_wrap .bg5{display: none;}
+#wrap main .bg_wrap .bg_nav_wrap {
+    display: flex; flex-flow: row nowrap;
+    position: absolute; left: 50%; bottom: 12px; /* 좌표 지정 안하면 형제 다음 위치 */
+    transform: translateX(-50%); /* 왼쪽 상단 기준으로 left: 50%를 요소의 가운데 기준으로 바꾸는 방법 */
+}
+#wrap main .bg_wrap .bg_nav_wrap a {
+    background-color: #EEEEEE;
+    width: 10px; height: 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+#wrap main .bg_wrap .bg_nav_wrap a:nth-child(1) {
+    background-color: #FF9100 ;
+}
+#wrap main .bg_wrap .bg_nav_wrap a:last-child {
+    margin-right: 0;
+}
+/* 2행 hill ============================================ */
+/* 2,3행 공통 스타일 ==================*/
+#wrap main .contents_wrap {
+    margin: 0 auto;
+    width: 1280px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; z-index: 10;
+}
+#wrap main .contents_wrap >h2{
+    color: #00712D;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+#wrap main .contents_wrap >p{
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+/* 2행 개별 스타일 =================== */
+#wrap main .hill{
+    position: relative;
+    padding: 80px 0;
+}
+#wrap main .hill .contents_wrap .hill_pic_slide {
+    width: max-content;
+    display: flex; flex-flow: row nowrap;    
+}
+#wrap main .hill .contents_wrap .hill_pic_slide a {
+    margin-right: 20px;
+}
+#wrap main .hill .contents_wrap .hill_pic_slide a:last-child {
+    margin-right: 0;
+}
+#wrap main .hill .contents_wrap .hill_pic_slide a img {}
+#wrap main .hill .slide_btn {}
+#wrap main .hill .slide_btn #slide_left_btn{
+    position: absolute; z-index: 20;
+    left: 230px; top: 50%;
+    transform: translateY(-50%)
+}
+#wrap main .hill .slide_btn #slide_left_btn img{}
+#wrap main .hill .slide_btn #slide_right_btn{
+    position: absolute; z-index: 20;
+    right: 230px; top: 50%;
+    transform: translateY(-50%)
+}
+#wrap main .hill .slide_btn #slide_right_btn img{}
+/* 3행 studio ========================= */
+#wrap main .studio {
+    padding: 80px 0;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap {
+    padding: 0 80px;
+    display: flex; flex-flow: row nowrap;
+    gap: 50px;
+    border: 1px solid red;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li {
+    border: 1px solid #B1B1B1;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li >p {}
+#wrap main .studio .contents_wrap .studio_pic_wrap li >p img{}
+#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents {
+    width: 340px; height: 152px;
+    padding: 35px 0;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents h2 {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents p:nth-child(2) {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li .pic_contents p:nth-child(3) {
+    display: none;
+}
+/* li:hover */
+#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover {
+    border: 1px solid #00712D;
+    position: relative;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover >p {
+    position: relative; z-index: 40;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents {
+    height: 184px;
+    padding: 41px 0;
+    position: absolute; bottom: 0; z-index: 50;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents h2{
+    color: #00712D;
+}
+#wrap main .studio .contents_wrap .studio_pic_wrap li:nth-child(1):hover .pic_contents p:nth-child(3) {
+    margin-top: 6px;
+    display: block;
+}
