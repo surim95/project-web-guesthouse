@@ -54,11 +54,9 @@
 }
 /* 2행 hill */
 #wrap main .hill {
-    border: 1px solid red;
     padding: 80px 0;
 }
 #wrap main .hill .contents_wrap {
-    border: 1px solid orange;
     margin: 0 230px;
     position: relative;
 }
@@ -149,7 +147,6 @@
 #wrap main .around .around_title {
     margin: 0 auto;
     width: 1280px;
-    border: 1px solid red;
     position: relative;
 }
 #wrap main .around .around_title h1 {
@@ -165,4 +162,54 @@
 }
 #wrap main .around .around_title p img {
     padding-left: 2px;
+}
+/* 5행 Q&A */
+#wrap main .qna {}
+#wrap main .qna .contents_wrap {
+    margin: 0 auto;
+    width: 1280px;
+    text-align: left;
+}
+#wrap main .qna .contents_wrap .top_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main .qna .contents_wrap .top_wrap .topleft_wrap {
+    
+}
+#wrap main .qna .contents_wrap .top_wrap .topleft_wrap h1 {
+    float: left;
+}
+#wrap main .qna .contents_wrap .top_wrap .topleft_wrap h1 a {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0 14px;
+    border: 1px solid red;
+    /* border-bottom: 3px solid #00712D; */
+
+}
+#wrap main .qna .contents_wrap .top_wrap .topright_wrap {}
+#wrap main .qna .contents_wrap .qna_list {}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle {}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a {}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a h2 {}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(2) {}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #B1B1B1;
+}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) span {
+    display: flex; align-items: center;
+    font-size: 0.875rem;
+    color: #B1B1B1;
+}
+#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) span::before {
+    content: ''; display: inline-block;
+    background-color: #B1B1B1;;
+    width: 1px; height: 8px;
+    margin: 0 10px;
 }
