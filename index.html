@@ -106,11 +106,18 @@
             <section class="around">
                 <div class="around_title">
                     <h1>주변 관광지</h1>
-                    <p>더보기<img src="./images/icon_more.png"></p>
+                    <p><a href="#">더보기<img src="./images/icon_more.png"></a></p>
                 </div>
-                <div class="around_slide_wrap">
-                    <h2>최승효 가옥</h2>
-                    <p>1989년 3월 20일 광주광역시 민속문화유산으로<br>지정된 독립운동가 최상현의 집.<br>일제강점기의 전통가옥. </p>
+                <div class="slide_container">
+                    <div class="slide_title slide1">
+                        <h2>최승효 가옥</h2>
+                        <p>1989년 3월 20일 광주광역시 민속문화유산으로<br>지정된 독립운동가 최상현의 집.<br>일제강점기의 전통가옥. </p>
+                    </div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                </div>
+                <div class="slidebar">
+                    <p class="slidebar_locate"></p>
                 </div>
             </section>
             <!-- 5행 Q&A -->
@@ -118,55 +125,77 @@
                 <div class="contents_wrap">
                     <div class="top_wrap">
                         <div class="topleft_wrap">
-                            <h1><a href="#">자주묻는 질문</a></h1>
-                            <h1><a href="#">공지사항</a></h1>
+                            <a href="#">자주묻는 질문</a>
+                            <a href="#">공지사항</a>
                         </div>
-                        <a href="#" class="topright_wrap">문의하기</a>
+                        <a href="#" class="inquiry">문의하기</a>
                     </div>
-                    <ul class="qna_list">
-                        <li class="li_comstyle">
-                            <a href="#">
+                    <div class="qna_list">
+                        <a href="#" class="qna_title qna_title1">
+                            <div class="qna_contents">
                                 <h2>예약 관련</h2>
                                 <p>객실 예약 및 입금확인은 어떻게 확인하나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                        <li class="li_comstyle">
-                            <a href="#">
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                        <a href="#" class="qna_title qna_title2">
+                            <div class="qna_contents">
                                 <h2>이용 관련</h2>
                                 <p>객실의 입실과 퇴실 시간은 어떻게 되나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                        <li class="li_comstyle">
-                            <a href="#">
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                        <a href="#" class="qna_title qna_title3">
+                            <div class="qna_contents">
                                 <h2>이용 관련</h2>
                                 <p>객실 이용 시 무엇을 준비해야 하나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                        <li class="li_comstyle">
-                            <a href="#">
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                        <a href="#" class="qna_title qna_title4">
+                            <div class="qna_contents">
                                 <h2>예약 관련</h2>
                                 <p>숙박 예약을 취소할 경우 환불은 어떻게 되나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                        <li class="li_comstyle">
-                            <a href="#">
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                        <a href="#" class="qna_title qna_title5">
+                            <div class="qna_contents">
                                 <h2>예약 관련</h2>
                                 <p>숙박 예약인원 초과시에는 어떻게 되나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                        <li class="li_comstyle">
-                            <a href="#">
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                        <a href="#" class="qna_title qna_title6">
+                            <div class="qna_contents">
                                 <h2>예약 관련</h2>
                                 <p>예약하는 방법이 어떻게 되나요?</p>
-                                <p>15.06.30<span>관리자</span></p>
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                            <p>15.06.30<span>관리자</span></p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 6행 찾아오시는 길 -->
+            <section class="road_map">
+                <h1>찾아오시는 길</h1>
+                <div class="map_container">
+                    <div class="map"></div>
+                    <dl class="map_contents">
+                        <dt>주소</dt>
+                        <dd>(503-822) 광주 남구 제중로47번길 18</dd>
+                        <dt>연락처</dt>
+                        <dd>TEL : 062) 654-0976, 070) 4240-0976</dd>
+                        <dd>FAX : 062) 653-0978</dd>
+                        <dd>MOBILE : 010-4705-0988</dd>
+                        <dt>대중교통</dt>
+                        <dd>시내버스</dd>
+                        <dd>(광천터미널 출발) 지원25 , 문흥48, 순환 01</dd>
+                        <dd>(광주역 출발) 순환 01, 금남55, 송정98</dd>
+                        <dd>지하철</dd>
+                        <dd>남광주역 3번 출구 (도보 25분)</dd>
+                        <dd>문화전당역 1, 3번 출구 (도보 35분)</dd>
+                    </dl>
                 </div>
             </section>
         </main>

@@ -160,56 +160,127 @@
     display: flex; flex-flow: row nowrap;
     align-items: center;
 }
-#wrap main .around .around_title p img {
+#wrap main .around .around_title p a {}
+#wrap main .around .around_title p a img {
     padding-left: 2px;
+}
+#wrap main .around .slide_container {
+    margin: 18px auto 10px; width: 1280px;
+    display: grid; gap: 20px;
+    grid-template-areas:
+        'title slide2'
+        'title slide3'
+    ;
+}
+#wrap main .around .slide_container .slide_title {
+    background: url(../images/landscape_001.jpg);
+    width: 630px; height: 460px;
+    position: relative; z-index: 3;
+    grid-area: title;
+}
+#wrap main .around .slide_container .slide_title::before {
+    content: ''; display: block;
+    background: linear-gradient(0deg,rgba(0,0,0,0.6), rgba(0,0,0,0) 60%);
+    position: absolute; z-index: 5;
+    width: 630px; height: 460px;
+}
+#wrap main .around .slide_container .slide_title h2 {
+    font-size: 2.5rem; font-weight: 700; color: #fff;
+    position: absolute; bottom: 121px; left: 26px; z-index: 6;
+}
+#wrap main .around .slide_container .slide_title p{
+    font-size: 1.125rem; line-height: 1.5; color: #fff;
+    position: absolute; bottom: 30px; left: 26px; z-index: 6;
+}
+#wrap main .around .slide_container .slide {
+    width: 630px; height: 220px;
+}
+#wrap main .around .slide_container .slide2 {
+    background: url(../images/landscape_002.jpg);
+    grid-area: slide2;
+}
+#wrap main .around .slide_container .slide3 {
+    background: url(../images/landscape_003.jpg);
+    grid-area: slide3;
+}
+#wrap main .around .slidebar {
+    width: 1280px; height: 4px; margin: 0 auto;
+    background: #FFFBE6;
+    border-radius: 2px;
+    position: relative;
+}
+#wrap main .around .slidebar_locate {
+    width: 30%; height: 4px;
+    background: #00712D;
+    border-radius: 2px;
+    position: absolute; left: 0; top: 0;
 }
 /* 5행 Q&A */
 #wrap main .qna {}
 #wrap main .qna .contents_wrap {
-    margin: 0 auto;
+    margin: 80px auto;
     width: 1280px;
     text-align: left;
 }
 #wrap main .qna .contents_wrap .top_wrap {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 #wrap main .qna .contents_wrap .top_wrap .topleft_wrap {
-    
+    display: flex;
 }
-#wrap main .qna .contents_wrap .top_wrap .topleft_wrap h1 {
-    float: left;
-}
-#wrap main .qna .contents_wrap .top_wrap .topleft_wrap h1 a {
+#wrap main .qna .contents_wrap .top_wrap .topleft_wrap a {
     font-size: 1.75rem;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 42px;
     padding: 0 14px;
-    border: 1px solid red;
-    /* border-bottom: 3px solid #00712D; */
-
 }
-#wrap main .qna .contents_wrap .top_wrap .topright_wrap {}
+#wrap main .qna .contents_wrap .top_wrap .topleft_wrap a:nth-child(1) {
+    color: #00712D; 
+    border-bottom: 3px solid #00712D;
+}
+#wrap main .qna .contents_wrap .top_wrap .inquiry {
+    padding: 12px 43px;
+    background: #00712D;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 20px;
+}
 #wrap main .qna .contents_wrap .qna_list {}
-#wrap main .qna .contents_wrap .qna_list .li_comstyle {}
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a {}
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a h2 {}
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(2) {}
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) {
-    display: flex; flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.875rem;
-    color: #B1B1B1;
+#wrap main .qna .contents_wrap .qna_list .qna_title {
+    display: flex; justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f1f1;
 }
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) span {
-    display: flex; align-items: center;
-    font-size: 0.875rem;
-    color: #B1B1B1;
+#wrap main .qna .contents_wrap .qna_list .qna_title .qna_contents{
+    display: flex;
 }
-#wrap main .qna .contents_wrap .qna_list .li_comstyle a p:nth-child(3) span::before {
+#wrap main .qna .contents_wrap .qna_list .qna_title .qna_contents h2{
+    font-size: 1.125rem; font-weight: 500; color: #FF9100;
+    margin-right: 20px;
+}
+#wrap main .qna .contents_wrap .qna_list .qna_title .qna_contents p{
+    font-size: 1.125rem;
+}
+#wrap main .qna .contents_wrap .qna_list .qna_title > p{
+    font-size: 0.875rem; color: #B1B1B1;
+}
+#wrap main .qna .contents_wrap .qna_list .qna_title > p span::before {
     content: ''; display: inline-block;
-    background-color: #B1B1B1;;
     width: 1px; height: 8px;
+    background-color: #B1B1B1;
     margin: 0 10px;
 }
+#wrap main .qna .contents_wrap .qna_list .qna_title > p span{
+    color: #B1B1B1;
+}
+/* 6행 찾아오시는 길 */
+#wrap main .road_map {
+    width: 1280px; margin: 0 auto;
+    text-align: center;
+}
+#wrap main .road_map h1{}
+#wrap main .road_map .map_container {}
+#wrap main .road_map .map_container .map {}
+#wrap main .road_map .map_container .map_contents {}
