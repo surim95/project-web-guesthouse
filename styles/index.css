@@ -328,3 +328,21 @@
 #wrap main .road_map .map_container .map_contents dt:nth-child(1) {
     margin-top: 0;
 }
+/* aside */
+#wrap aside {
+    position:fixed; z-index: 999;
+    right: 60px; bottom: 60px; gap: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#wrap aside a {
+    width: 54px; height: 54px;
+    background: #D5ED9F;
+    border-radius: 27px;
+}
+#wrap aside a:last-child {
+    background: #FF9100;
+}
+#wrap aside a img{
+    padding: 12px;
+}
