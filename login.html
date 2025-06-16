@@ -28,7 +28,7 @@
                             <input type="checkbox" value="stay_login" name="user_stay" id="stay_login_on">
                             <label for="stay_login_on">로그인 상태 유지</label>
                         </div>
-                        <button type="submit" id="sign_in_btn">로그인</button>
+                        <button type="button" id="sign_in_btn">로그인</button>
                         <ul class="find_user">
                             <li><a href="#">아이디 찾기</a></li>
                             <li><a href="#">비밀번호 찾기</a></li>
@@ -57,5 +57,10 @@
         passwordInput.setAttribute('type', type); /* 위에서 적용된 type 값을 type 속성에 담는다. */
         /* this = 클릭된 이미지 요소의 type이 password 이면 icon_eyeclose를 보여주고 아니면 icon_eyeopen을 보여준다. */
         this.src = type === 'password' ? "./images/icon_eyeclose.png" : "./images/icon_eyeopen.png" ; });
+    const loginBtn = document.querySelector('#sign_in_btn');
+    loginBtn.addEventListener('click',()=>{
+        alert('로그인할 수 없습니다.');
+        window.location.href = 'index.html'
+    })
 </script>
 </html>

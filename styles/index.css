@@ -92,17 +92,28 @@
     gap: 50px;
     padding: 0 80px;
 }
+#wrap main .studio .contents_wrap li *{
+    transition: all 0.3s;
+    /* 원래 상태에서도 transition 줘야 원래대로 돌아올 때도 부드러워짐. */
+}
 #wrap main .studio .contents_wrap li {
     border: 1px solid #B1B1B1;
+    height: 492px;
+    /* 높이 안주면 hover이벤트에서 원래대로 돌아올 때의 높이가 달라 보이는게 달라짐. */
+    position: relative;
+    /* absolute의 부모. */
 }
 #wrap main .studio .contents_wrap li >p {
     width: 340px; height: 340px;
 }
 #wrap main .studio .contents_wrap li >p img {}
 #wrap main .studio .contents_wrap li .explain {
+    display: block;
     width: 340px; height: 152px;
     background-color: #fff;
     padding: 35px 0;
+    position: absolute; bottom: 0;
+    /* 이벤트에서 absolute bottom 주었기 때문에 원상태에서도 주어서 애니메이션 부드럽게 적용하기. */
 }
 #wrap main .studio .contents_wrap li .explain h2 {
     font-size: 1.25rem;
@@ -127,6 +138,7 @@
     position: relative;
 }
 #wrap main .studio .contents_wrap li:hover .explain {
+    display: block;
     height: 184px;
     position: absolute; bottom: 0;
     padding: 41px 0;
@@ -241,11 +253,12 @@
     border-bottom: 3px solid #00712D;
 }
 #wrap main .qna .contents_wrap .top_wrap .inquiry {
-    padding: 12px 43px;
+    width: 140px; height: 40px;
     background: #00712D;
-    color: #fff;
+    color: #fff; line-height: 40px;
     font-weight: 500;
     border-radius: 20px;
+    text-align: center;
 }
 #wrap main .qna .contents_wrap .qna_list {}
 #wrap main .qna .contents_wrap .qna_list .qna_title {
