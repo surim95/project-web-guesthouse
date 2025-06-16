@@ -277,10 +277,41 @@
 }
 /* 6행 찾아오시는 길 */
 #wrap main .road_map {
-    width: 1280px; margin: 0 auto;
+    width: 1280px; margin: 80px auto;
     text-align: center;
 }
-#wrap main .road_map h1{}
-#wrap main .road_map .map_container {}
-#wrap main .road_map .map_container .map {}
-#wrap main .road_map .map_container .map_contents {}
+#wrap main .road_map h1::before {
+    content: ''; display: block;
+    width: 100px; height: 2px;
+    background: #00712D;
+    margin: 0 auto 40px;
+}
+#wrap main .road_map h1{
+    font-size: 2.5rem; font-weight: 500; color: #00712D;
+    margin-bottom: 80px;
+}
+#wrap main .road_map .map_container {
+    display: flex;
+}
+#wrap main .road_map .map_container .map {
+    margin-right: 42px; background: yellow;
+    width: 700px; height: 390px;
+    border: 1px solid #B1B1B1;
+}
+#wrap main .road_map .map_container .map iframe{
+    width: 100%; height: 100%;
+}
+#wrap main .road_map .map_container .map_contents {
+    text-align: left;
+}
+#wrap main .road_map .map_container .map_contents dt {
+    font-size: 1.375rem; font-weight: 500;
+    color: #FF9100;
+    margin:20px 0 6px;
+}
+#wrap main .road_map .map_container .map_contents dd {
+    font-weight: 300; line-height: 1.5;
+}
+#wrap main .road_map .map_container .map_contents dt:nth-child(1) {
+    margin-top: 0;
+}
